@@ -35,6 +35,22 @@ void display(node* head)      //Call by value since we aren't modifying the link
     cout << endl;
 }
 
+//Searching
+
+bool Search(node* head, int key)
+{ node* temp = head;
+  while(temp!= NULL)
+  { 
+      if(temp->data == key)
+      {
+          return true;
+      }
+      temp=temp->next;
+  }
+ return false;
+}
+
+
 int main()
 {
     node* head = NULL;
@@ -42,4 +58,5 @@ int main()
     insertAtHead(head,2);
     insertAtHead(head,3);
     display(head);
+    cout << search(head,2) <<endl;
 }

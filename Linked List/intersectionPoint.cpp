@@ -124,6 +124,7 @@ int intersection(node *&head1, node *&head2)
 
 int main()
 {
+    node *head1 = NULL;
     node *head2 = NULL;
     insertAtTail(head1, 1);
     insertAtTail(head1, 2);
